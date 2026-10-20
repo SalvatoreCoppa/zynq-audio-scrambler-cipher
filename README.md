@@ -33,3 +33,13 @@ The development workflow follows a strict Top-Down Model-Based Design approach:
 ├── voice_scrambler_sw/                  # Bare-metal C application and Board Support Package (BSP)
 ├── SoC_VoiceScrambler_docs.pdf                   # PDF report and project documentation
 └── README.md
+```
+
+## 👨‍💻 Author & Credits
+
+**Salvatore Coppa**  
+*Embedded Systems Engineer & Researcher at UNISA*  
+- [GitHub](https://github.com/SalvatoreCoppa)  
+- [LinkedIn](www.linkedin.com/in/salvatorecoppa)  
+
+*This project was developed for the System on Chip course at the **University of Salerno (UNISA)** - Department of Information Engineering, Electrical Engineering and Applied Mathematics (DIEM).*
