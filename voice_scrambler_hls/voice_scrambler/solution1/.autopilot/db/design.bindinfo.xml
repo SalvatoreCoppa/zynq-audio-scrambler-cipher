@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln17_fu_83_p2" SOURCE="scrambler.c:17" VARIABLE="icmp_ln17" MODULE="scrambler" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="select_ln17_fu_89_p3" SOURCE="scrambler.c:17" VARIABLE="select_ln17" MODULE="scrambler" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="select_ln3_fu_97_p3" SOURCE="scrambler.c:3" VARIABLE="select_ln3" MODULE="scrambler" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln28_fu_123_p2" SOURCE="scrambler.c:28" VARIABLE="xor_ln28" MODULE="scrambler" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="select_ln27_fu_129_p3" SOURCE="scrambler.c:27" VARIABLE="select_ln27" MODULE="scrambler" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="y" SOURCE="scrambler.c:32" VARIABLE="xor_ln32" MODULE="scrambler" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="scrambler_io_s_axi_U" SOURCE="" VARIABLE="" MODULE="scrambler" LOOP="" BUNDLEDNAME="scrambler_io" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

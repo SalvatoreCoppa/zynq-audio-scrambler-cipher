@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="scrambler_uart_app" location="C:/Users/sasyc/Documents/VitisProjects/voice_scrambler_sw/scrambler_uart_app" platform="C:/Users/sasyc/Documents/VitisProjects/voice_scrambler_sw/scrambler_platform/export/scrambler_platform/scrambler_platform.xpfm" platformUID="xilinx:zybo-z7-20::0.0(custom)" systemProject="scrambler_uart_app_system" sysConfig="scrambler_platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="447e6f087d0fa95707b8118a3a711443">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1869373152">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.544608229" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

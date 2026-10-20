@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="scrambler.h" path="C:\Users\sasyc\Documents\HLSProjects\voice_scrambler\scrambler.h"/>
+    <originFiles name="scrambler.c" path="C:\Users\sasyc\Documents\HLSProjects\voice_scrambler\scrambler.c"/>
+  </source>
+  <testbench>
+    <originFiles name="scrambler_test.c" path="C:\Users\sasyc\Documents\HLSProjects\voice_scrambler\scrambler_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

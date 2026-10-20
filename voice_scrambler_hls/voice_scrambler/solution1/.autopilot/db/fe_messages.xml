@@ -1,0 +1,21 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="scrambler.c:4:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="scrambler" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=scrambler" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="scrambler.c:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="scrambler" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite bundle=scrambler_io port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="scrambler.c:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="scrambler" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite bundle=scrambler_io port=x" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="scrambler.c:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="scrambler" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite bundle=scrambler_io port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="scrambler.c:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="scrambler" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite bundle=scrambler_io port=seed" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="scrambler.c:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="scrambler" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite bundle=scrambler_io port=load_seed" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

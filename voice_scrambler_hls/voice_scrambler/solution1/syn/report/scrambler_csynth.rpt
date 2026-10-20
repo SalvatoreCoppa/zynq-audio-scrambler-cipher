@@ -1,0 +1,143 @@
+
+
+================================================================
+== Vitis HLS Report for 'scrambler'
+================================================================
+* Date:           Thu May  7 22:38:45 2026
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        voice_scrambler
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.214 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     93|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    -|     116|    140|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|      17|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     133|    233|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------+--------------------+---------+----+-----+-----+-----+
+    |       Instance       |       Module       | BRAM_18K| DSP|  FF | LUT | URAM|
+    +----------------------+--------------------+---------+----+-----+-----+-----+
+    |scrambler_io_s_axi_U  |scrambler_io_s_axi  |        0|   0|  116|  140|    0|
+    +----------------------+--------------------+---------+----+-----+-----+-----+
+    |Total                 |                    |        0|   0|  116|  140|    0|
+    +----------------------+--------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |icmp_ln17_fu_83_p2     |      icmp|   0|  0|  13|          16|           1|
+    |select_ln17_fu_89_p3   |    select|   0|  0|  16|           1|          16|
+    |select_ln27_fu_129_p3  |    select|   0|  0|  16|           1|          16|
+    |select_ln3_fu_97_p3    |    select|   0|  0|  16|           1|          16|
+    |xor_ln28_fu_123_p2     |       xor|   0|  0|  16|          16|          16|
+    |y                      |       xor|   0|  0|  16|          16|          16|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0|  93|          51|          81|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +------------+----+----+-----+-----------+
+    |    Name    | FF | LUT| Bits| Const Bits|
+    +------------+----+----+-----+-----------+
+    |ap_CS_fsm   |   1|   0|    1|          0|
+    |lfsr_state  |  16|   0|   16|          0|
+    +------------+----+----+-----+-----------+
+    |Total       |  17|   0|   17|          0|
+    +------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+--------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  | Source Object|    C Type    |
++----------------------------+-----+-----+------------+--------------+--------------+
+|s_axi_scrambler_io_AWVALID  |   in|    1|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_AWREADY  |  out|    1|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_AWADDR   |   in|    6|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_WVALID   |   in|    1|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_WREADY   |  out|    1|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_WDATA    |   in|   32|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_WSTRB    |   in|    4|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_ARVALID  |   in|    1|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_ARREADY  |  out|    1|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_ARADDR   |   in|    6|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_RVALID   |  out|    1|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_RREADY   |   in|    1|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_RDATA    |  out|   32|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_RRESP    |  out|    2|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_BVALID   |  out|    1|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_BREADY   |   in|    1|       s_axi|  scrambler_io|        scalar|
+|s_axi_scrambler_io_BRESP    |  out|    2|       s_axi|  scrambler_io|        scalar|
+|ap_local_block              |  out|    1|  ap_ctrl_hs|     scrambler|  return value|
+|ap_clk                      |   in|    1|  ap_ctrl_hs|     scrambler|  return value|
+|ap_rst_n                    |   in|    1|  ap_ctrl_hs|     scrambler|  return value|
+|interrupt                   |  out|    1|  ap_ctrl_hs|     scrambler|  return value|
++----------------------------+-----+-----+------------+--------------+--------------+
+

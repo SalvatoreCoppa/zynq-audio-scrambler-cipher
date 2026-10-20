@@ -1,0 +1,30 @@
+# Vivado
+voice_scrambler_hw/*.jou
+voice_scrambler_hw/*.log
+voice_scrambler_hw/*.str
+voice_scrambler_hw/*.dmp
+voice_scrambler_hw/.Xil/
+voice_scrambler_hw/**/*.cache/
+voice_scrambler_hw/**/*.hw/
+voice_scrambler_hw/**/*.runs/
+voice_scrambler_hw/**/*.sim/
+voice_scrambler_hw/**/*.ip_user_files/
+
+# Vitis / SDK
+voice_scrambler_sw/**/Debug/
+voice_scrambler_sw/**/Release/
+voice_scrambler_sw/.metadata/
+voice_scrambler_sw/**/.analytics/
+voice_scrambler_sw/**/*.elf
+voice_scrambler_sw/**/*.o
+voice_scrambler_sw/**/*.bin
+
+# Vitis HLS
+voice_scrambler_hls/**/*.log
+voice_scrambler_hls/**/solution*/sim/
+voice_scrambler_hls/**/solution*/impl/
+voice_scrambler_hls/**/*.tar.gz
+
+# OS generici
+.DS_Store
+Thumbs.db

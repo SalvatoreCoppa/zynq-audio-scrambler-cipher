@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_scrambler_system_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_vip_pkg" />
+            <top_module name="common_types" />
+            <top_module name="family_support" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="std" />
+            <top_module name="tb_scrambler_system" />
+            <top_module name="xil_common_vip_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2,209.685 ns"></ZoomStartTime>
+      <ZoomEndTime time="4,179.686 ns"></ZoomEndTime>
+      <Cursor1Time time="2,939.366 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="425"></NameColumnWidth>
+      <ValueColumnWidth column_width="126"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb_scrambler_system/BCLK" type="logic">
+      <obj_property name="ElementShortName">BCLK</obj_property>
+      <obj_property name="ObjectShortName">BCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/FCLK_CLK1" type="logic">
+      <obj_property name="ElementShortName">FCLK_CLK1</obj_property>
+      <obj_property name="ObjectShortName">FCLK_CLK1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/PBDATA" type="logic">
+      <obj_property name="ElementShortName">PBDATA</obj_property>
+      <obj_property name="ObjectShortName">PBDATA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/PBLRCLK" type="logic">
+      <obj_property name="ElementShortName">PBLRCLK</obj_property>
+      <obj_property name="ObjectShortName">PBLRCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/RECLRCLK" type="logic">
+      <obj_property name="ElementShortName">RECLRCLK</obj_property>
+      <obj_property name="ObjectShortName">RECLRCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/MUTE_tri_o" type="array">
+      <obj_property name="ElementShortName">MUTE_tri_o[0:0]</obj_property>
+      <obj_property name="ObjectShortName">MUTE_tri_o[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/RECDAT" type="logic">
+      <obj_property name="ElementShortName">RECDAT</obj_property>
+      <obj_property name="ObjectShortName">RECDAT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/SW_tri_i" type="array">
+      <obj_property name="ElementShortName">SW_tri_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SW_tri_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/IIC_1_scl_io" type="logic">
+      <obj_property name="ElementShortName">IIC_1_scl_io</obj_property>
+      <obj_property name="ObjectShortName">IIC_1_scl_io</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/IIC_1_sda_io" type="logic">
+      <obj_property name="ElementShortName">IIC_1_sda_io</obj_property>
+      <obj_property name="ObjectShortName">IIC_1_sda_io</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/resp" type="array">
+      <obj_property name="ElementShortName">resp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">resp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/read_data" type="array">
+      <obj_property name="ElementShortName">read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider579">
+      <obj_property name="label">Zynq to AXI Interconnect</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/DUT/design_1_i/processing_system7_0/M_AXI_GP0" type="protoinst">
+      <obj_property name="ElementShortName">M_AXI_GP0</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_GP0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/DUT/design_1_i/ps7_0_axi_periph/S00_AXI" type="protoinst">
+      <obj_property name="ElementShortName">S00_AXI</obj_property>
+      <obj_property name="ObjectShortName">S00_AXI</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider581">
+      <obj_property name="label">AXI Interconnect to Scrambler TX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FF0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/DUT/design_1_i/ps7_0_axi_periph/M03_AXI" type="protoinst">
+      <obj_property name="ElementShortName">M03_AXI</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_scrambler_system/DUT/design_1_i/scrambler_tx/s_axi_scrambler_io" type="protoinst">
+      <obj_property name="ElementShortName">s_axi_scrambler_io</obj_property>
+      <obj_property name="ObjectShortName">s_axi_scrambler_io</obj_property>
+   </wvobject>
+</wave_config>

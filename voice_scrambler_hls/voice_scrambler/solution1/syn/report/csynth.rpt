@@ -1,0 +1,111 @@
+
+
+================================================================
+== Synthesis Summary Report of 'scrambler'
+================================================================
++ General Information: 
+    * Date:           Thu May  7 22:38:45 2026
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+    * Project:        voice_scrambler
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |   Modules   | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |   & Loops   | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ scrambler  |     -|  0.09|        0|   0.000|         -|        1|     -|        no|     -|   -|  133 (~0%)|  233 (~0%)|    -|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++--------------------+------------+---------------+--------+----------+
+| Interface          | Data Width | Address Width | Offset | Register |
++--------------------+------------+---------------+--------+----------+
+| s_axi_scrambler_io | 32         | 6             | 16     | 0        |
++--------------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++--------------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+| Interface          | Register  | Offset | Width | Access | Description                      | Bit Fields                                               |
++--------------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+| s_axi_scrambler_io | CTRL      | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART |
+| s_axi_scrambler_io | GIER      | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                 |
+| s_axi_scrambler_io | IP_IER    | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN 5=CHAN2_INT_EN             |
+| s_axi_scrambler_io | IP_ISR    | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST 5=CHAN2_INT_ST             |
+| s_axi_scrambler_io | y         | 0x10   | 32    | R      | Data signal of y                 |                                                          |
+| s_axi_scrambler_io | y_ctrl    | 0x14   | 32    | R      | Control signal of y              | 0=y_ap_vld                                               |
+| s_axi_scrambler_io | x         | 0x20   | 32    | W      | Data signal of x                 |                                                          |
+| s_axi_scrambler_io | seed      | 0x28   | 32    | W      | Data signal of seed              |                                                          |
+| s_axi_scrambler_io | load_seed | 0x30   | 32    | W      | Data signal of load_seed         |                                                          |
++--------------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+----------------+
+| Argument  | Direction | Datatype       |
++-----------+-----------+----------------+
+| y         | out       | short*         |
+| x         | in        | short          |
+| seed      | in        | unsigned short |
+| load_seed | in        | _Bool          |
++-----------+-----------+----------------+
+
+* SW-to-HW Mapping
++-----------+--------------------+----------+-------------------------------------+
+| Argument  | HW Interface       | HW Type  | HW Info                             |
++-----------+--------------------+----------+-------------------------------------+
+| y         | s_axi_scrambler_io | register | name=y offset=0x10 range=32         |
+| y         | s_axi_scrambler_io | register | name=y_ctrl offset=0x14 range=32    |
+| x         | s_axi_scrambler_io | register | name=x offset=0x20 range=32         |
+| seed      | s_axi_scrambler_io | register | name=seed offset=0x28 range=32      |
+| load_seed | s_axi_scrambler_io | register | name=load_seed offset=0x30 range=32 |
++-----------+--------------------+----------+-------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
+  No bind op info in design
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------------------------------+---------------------------------------+
+| Type      | Options                                           | Location                              |
++-----------+---------------------------------------------------+---------------------------------------+
+| interface | mode=s_axilite bundle=scrambler_io port=return    | scrambler.c:5 in scrambler, return    |
+| interface | mode=s_axilite bundle=scrambler_io port=x         | scrambler.c:6 in scrambler, x         |
+| interface | mode=s_axilite bundle=scrambler_io port=y         | scrambler.c:7 in scrambler, y         |
+| interface | mode=s_axilite bundle=scrambler_io port=seed      | scrambler.c:8 in scrambler, seed      |
+| interface | mode=s_axilite bundle=scrambler_io port=load_seed | scrambler.c:9 in scrambler, load_seed |
++-----------+---------------------------------------------------+---------------------------------------+
+
+
